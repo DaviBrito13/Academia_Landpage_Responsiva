@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!--Fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="/styles/main.css" />
+
+    <title>Fitsys</title>
+    <script src="/scripts/script.js" defer></script>
+  </head>
+    
+  <body>
+    <!--Header-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand color-white" href="#">FitSys</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active color-white"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link color-white" href="#">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link color-white" href="#">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link login-button" href="#">Login</a>
+            </li>
+            <li>
+              <img src="/assets/button-light.png" class="btn-theme" alt="Botão para mudar o tema do site">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Hero-->
+    <div class="container hero">
+      <div class="row hero-container">
+        <div class="col-sm-5 hero-text">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-5 col-md-12">
+                <h2 class="hero-message">
+                  Treine conosco para<br />chegar alcançar o físico<br />que
+                  deseja. Treinos feitos<br />para você!
+                </h2>
+              </div>
+              <div class="col-xs-12">
+                <p>Treinos gerados sob medida para todo tipo de objetivo</p>
+              </div>
+              <div class="col-xs-12">
+                <form class="form-inline row no-margin hero-form">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Escreva seu e-mail"
+                    name="email"
+                  />
+                  <button type="submit" class="btn btn-default">
+                    Treine conosco!
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-2 col-sm-5 hero-img-container">
+          <img
+            class="hero-img"
+            src="/assets/hero-image.png"
+            alt="Uma mulher loira de roupa de academia malhando com pesos de academia"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Container de Treinos -->
+
+    <div class="container-treinos">
+      <div class="treinos">
+        <div class="treinos-header">
+          <h1>Treinos mais requisitados na FitSys</h1>
+          <button routerLink="/login" mat-button>Veja mais treinos</button>
+        </div>
+    
+        <div class="container-treinos-card">
+          <div class="container-treino">
+            <img src="/assets/peito.png" alt="peito" />
+            <h4>Treino de Peito</h4>
+            <p>
+              Treino que além de desenvolvimento de musculos do peito irá contribuir
+              para sua circulação, e respiração
+            </p>
+          </div>
+          <div class="container-treino" id="container-especial">
+            <img src="/assets/perna.png" alt="perna" />
+            <h4>Treino de Perna</h4>
+            <p>
+              Treino que além de desenvolvimento de musculos do peito irá contribuir
+              para sua circulação, e respiração
+            </p>
+          </div>
+    
+          <div class="container-treino">
+            <img src="/assets/abdomen.png" alt="abdomen" />
+            <h4>Treino de Abdômen</h4>
+            <p>
+              Treino de fortalecimento do abdômem para você que busca o lendário
+              six-pack
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Benefícios -->
+    
+      <div class="container-benefits">
+
+        <div class="container-content">
+
+          <div class="title">
+            <p>
+              Os <span id="destaque">benefícios</span> que você tem ao assinar conosco
+            </p>
+          </div>
+        
+          <div class="description">
+            <p>Uma experiência completa para você cuidar da sua saúde onde quiser</p>
+          </div>
+        
+          <div class="benefits">
+            <div class="benefits-list">
+              <span class="grid-item"
+                ><img src="/assets/yellow-arrow.svg" alt="" /> Treinos
+                online</span
+              >
+              <span class="grid-item"
+                ><img src="/assets/yellow-arrow.svg" alt="" />Nutricionistas via
+                videochamada</span
+              >
+              <span class="grid-item"
+                ><img src="/assets/yellow-arrow.svg" alt="" />Consultoria com
+                professores</span
+              >
+              <span class="grid-item"
+                ><img src="/assets/yellow-arrow.svg" alt="" />Liberdade na hora de
+                treinar</span
+              >
+            </div>
+          </div>
+        
+          <button class="matricular">
+            <a style="text-decoration: none; color: white"
+              >Matricule-se já!</a
+            >
+          </button>
+        </div>
+      
+        <img
+          src="/assets/man-and-womam.png"
+          alt="woman-and-man"
+          id="woman-and-man"
+        />
+      </div>
+
+
+      <!-- Planos -->
+
+      <div class="footer2">
+        <div class="apresentacao">
+          <h1>Lista de Preços</h1>
+          <p>
+            Todos os planos dispníveis com as mais variadas opções, com ceretza com
+            uma que sirva tanto seu estilo de treino quanto seu bolso!
+          </p>
+        </div>
+      
+        <section class="cards-container">
+          <div class="card">
+            <div class="card-body">
+
+              <div class="card-header">
+                <h1>Pacote Iniciante</h1>
+                <h2>R$49 / Mês</h2>
+              </div>
+            
+              <div class="content">
+                <p>
+                  Escolha de até três diferentes tipos de treino para integrar o <br />
+                  pacote mensal, além do pacote gratuito de atividades aeróbicas.
+                </p>
+                <ul class="vantagens">
+                  <li>Escolha de até três diferentes tipos de treino</li>
+                  <li>Treino aeróbico gratuito</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card-button-plano">
+              <button class="escolher">Escolher plano</button>
+            </div>
+      
+          </div>
+      
+          <div class="card">
+            <div class="card-body">
+              <div class="card-header">
+                <h1>Pacote Intermediario</h1>
+                <h2>R$70 / Mês</h2>
+              </div>
+        
+              <div class="content">
+                <p>
+                  Escolha de até cinco diferentes tipos de treino para integrar o
+                  <br />seu pacote mensal, além do pacote gratuito de atividades<br />
+                  aeróbicas, também podendo consultar treinadores a qualquer<br />
+                  momento.
+                </p>
+                <ul class="vantagens">
+                  <li>Escolha de até cinco diferentes tipos de treino</li>
+                  <li>Treino aeróbico gratuito</li>
+                  <li>Acesso a instrutores para auxílio</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="card-button-plano">
+              <button class="escolher">Escolher plano</button>
+            </div>
+          </div>
+      
+          <div class="card">
+            <div class="card-body">
+              <div class="card-header">
+                <h1>Pacote Avançado</h1>
+                <h2>R$99 / Mês</h2>
+              </div>
+        
+              <div class="content">
+                <p>
+                  Escolha qualquer um da nossa variada lista de tipos de treino para
+                  <br />
+                  integrar o seu pacote mensal, além do pacote gratuito de atividades<br />
+                  aeróbicas, também podendo consultar treinadores e nutricionistas
+                  <br />
+                  a qualquer momento.
+                </p>
+                <ul class="vantagens">
+                  <li>Escolha de até três diferentes tipos de treino</li>
+                  <li>Treino aeróbico gratuito</li>
+                  <li>Acesso a instrutores para auxílio</li>
+                  <li>Consultoria com nutricioonistas</li>
+                </ul>
+              </div>
+            </div>
+      
+             <div class="card-button-plano">
+              <button class="escolher">Escolher plano</button>
+            </div>
+          </div>
+
+        </section>
+      </div>
+      
+    
+      
+    
+
+  </div>
+</div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
